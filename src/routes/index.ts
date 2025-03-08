@@ -102,7 +102,7 @@ router.put('/putService/:id', async (req, res) => {
             return;
         }
 
-        const isValid = dataValidation.safeParse(req.body);
+        const isValid = await dataValidation.safeParse(req.body);
         if(!isValid) {
             res.json({error: 'Dados em formato inválido, não segue o padrão'});
             return;
