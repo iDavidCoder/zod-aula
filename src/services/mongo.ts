@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const MONGO_URI = 'mongodb+srv://rootData:rootData@cluster0.e0bka.mongodb.net/users'
+const MONGO_URI = 'URL DE MONGO AQ'
 
 export const connectDB = async () => {
     try {
